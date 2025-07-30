@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,32 +16,32 @@
             --dark: #1e293b;
             --light: #f8fafc;
         }
-        
+
         .dark {
             --primary: #3b82f6;
             --secondary: #60a5fa;
             --dark: #f8fafc;
             --light: #1e293b;
         }
-        
+
         * {
             transition: background-color 0.3s, color 0.3s;
         }
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--light);
             color: var(--dark);
             scroll-behavior: smooth;
         }
-        
+
         .section-title {
             position: relative;
             display: inline-block;
             margin-bottom: 2.5rem;
             font-weight: 700;
         }
-        
+
         .section-title:after {
             content: '';
             position: absolute;
@@ -51,17 +52,17 @@
             background: var(--primary);
             border-radius: 2px;
         }
-        
+
         .project-card {
             transition: transform 0.3s, box-shadow 0.3s;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
-        
+
         .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
-        
+
         .tech-tag {
             background-color: #e0f2fe;
             color: #0369a1;
@@ -72,29 +73,29 @@
             margin-bottom: 5px;
             display: inline-block;
         }
-        
+
         .progress-bar {
             height: 8px;
             border-radius: 4px;
             background-color: #e2e8f0;
             overflow: hidden;
         }
-        
+
         .progress-fill {
             height: 100%;
             background-color: var(--primary);
             border-radius: 4px;
         }
-        
+
         .dark .tech-tag {
             background-color: #1e3a8a;
             color: #dbeafe;
         }
-        
+
         .dark .progress-bar {
             background-color: #334155;
         }
-        
+
         .dark-mode-btn {
             position: fixed;
             right: 30px;
@@ -111,13 +112,13 @@
             cursor: pointer;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        
+
         .timeline-item {
             position: relative;
             padding-left: 30px;
             margin-bottom: 40px;
         }
-        
+
         .timeline-item:before {
             content: '';
             position: absolute;
@@ -129,7 +130,7 @@
             background: var(--primary);
             border: 3px solid var(--light);
         }
-        
+
         .timeline-item:after {
             content: '';
             position: absolute;
@@ -139,12 +140,13 @@
             width: 2px;
             background: var(--primary);
         }
-        
+
         .timeline-item:last-child:after {
             display: none;
         }
     </style>
 </head>
+
 <body class="dark:bg-slate-900 dark:text-white">
     <!-- Dark Mode Toggle -->
     <div class="dark-mode-btn">
@@ -160,12 +162,18 @@
                     <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">Akash Raj</div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Home</a>
-                    <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">About</a>
-                    <a href="#experience" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Experience</a>
-                    <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Projects</a>
-                    <a href="#skills" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Skills</a>
-                    <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Contact</a>
+                    <a href="#home"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Home</a>
+                    <a href="#about"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">About</a>
+                    <a href="#experience"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Experience</a>
+                    <a href="#projects"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Projects</a>
+                    <a href="#skills"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Skills</a>
+                    <a href="#contact"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Contact</a>
                 </div>
                 <button class="md:hidden text-gray-700 dark:text-gray-300">
                     <i class="fas fa-bars text-xl"></i>
@@ -175,7 +183,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-900">
+    <section id="home"
+        class="pt-32 pb-20 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
@@ -183,26 +192,32 @@
                         Hi, I'm <span class="text-blue-600 dark:text-blue-400">Akash Raj</span>
                     </h1>
                     <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
-                        Chemical Engineer & Tech Innovator
+                        Aspiring Chemical Engineer
                     </h2>
                     <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-                        Final year B.Tech Chemical Engineering student at NIT Jalandhar, specializing in process optimization and digital transformation in chemical industries. Currently interning at Reliance Industries.
+                        Final year B.Tech Chemical Engineering student at NIT Jalandhar with a strong passion for core
+                        chemical processes, plant operations, and sustainable engineering solutions. Currently gaining
+                        hands-on industrial experience at Reliance Industries Limited, Nagothane, focusing on
+                        large-scale petrochemical plant operations and optimization.
                     </p>
+
                     <div class="flex flex-wrap gap-4">
-                        <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg flex items-center">
+                        <a href="#projects"
+                            class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg flex items-center">
                             <i class="fas fa-code mr-2"></i> View Projects
                         </a>
-                        <a href="#contact" class="px-6 py-3 bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 border border-blue-600 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-600 transition duration-300 flex items-center">
+                        <a href="#contact"
+                            class="px-6 py-3 bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 border border-blue-600 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-600 transition duration-300 flex items-center">
                             <i class="fas fa-envelope mr-2"></i> Contact Me
                         </a>
                     </div>
                 </div>
                 <div data-aos="fade-left" class="flex justify-center">
                     <div class="relative">
-                        <div class="absolute -inset-4 bg-blue-500 rounded-full opacity-20 blur-xl animate-fade-in"></div>
-                        <img src="/assets/akash.jpg" 
-                             alt="Akash Raj" 
-                             class="w-80 h-80 object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-xl">
+                        <div class="absolute -inset-4 bg-blue-500 rounded-full opacity-20 blur-xl animate-fade-in">
+                        </div>
+                        <img src="/assets/akash.jpg" alt="Akash Raj"
+                            class="w-80 h-80 object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-xl">
                     </div>
                 </div>
             </div>
@@ -213,60 +228,76 @@
     <section id="about" class="py-20 bg-white dark:bg-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-16 section-title" data-aos="fade-up">About Me</h2>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <div class="lg:col-span-2" data-aos="fade-right">
                     <h3 class="text-2xl font-semibold mb-4">Professional Journey</h3>
                     <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                        I'm a passionate Chemical Engineering student with a strong inclination towards technology and innovation. My journey at NIT Jalandhar has equipped me with a solid foundation in chemical processes, while my internships at Reliance Industries have given me hands-on experience in industrial-scale operations.
+                        I'm a passionate Chemical Engineering student with a deep interest in core industrial processes,
+                        plant design, and unit operations. My academic journey at NIT Jalandhar has built a strong
+                        foundation in thermodynamics, reaction engineering, and mass transfer principles.
                     </p>
                     <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                        What sets me apart is my ability to bridge the gap between traditional chemical engineering and modern digital solutions. I specialize in developing software tools for process optimization, data analysis for quality control, and digital twins for chemical plants.
+                        Through my internships at Reliance Industries Limited, I have gained practical exposure to
+                        petrochemical plant operations, safety protocols, utility systems, and troubleshooting under
+                        real industrial conditions. I enjoy working in process-oriented environments and aspire to
+                        contribute to efficient and sustainable chemical manufacturing.
                     </p>
                     <div class="flex flex-wrap gap-4 mt-8">
                         <div class="bg-blue-50 dark:bg-slate-700 px-6 py-4 rounded-lg shadow-sm">
-                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">5+</div>
-                            <div class="text-gray-600 dark:text-gray-400">Projects</div>
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">3</div>
+                            <div class="text-gray-600 dark:text-gray-400">Core Projects</div>
                         </div>
                         <div class="bg-blue-50 dark:bg-slate-700 px-6 py-4 rounded-lg shadow-sm">
                             <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">2</div>
-                            <div class="text-gray-600 dark:text-gray-400">Internships</div>
+                            <div class="text-gray-600 dark:text-gray-400">Industrial Internships</div>
                         </div>
                         <div class="bg-blue-50 dark:bg-slate-700 px-6 py-4 rounded-lg shadow-sm">
-                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">8</div>
-                            <div class="text-gray-600 dark:text-gray-400">Technologies</div>
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">10+</div>
+                            <div class="text-gray-600 dark:text-gray-400">Unit Operations Mastered</div>
                         </div>
                     </div>
                 </div>
-                
+
+
                 <div data-aos="fade-left">
                     <h3 class="text-2xl font-semibold mb-6">Education</h3>
                     <div class="space-y-6">
                         <div class="bg-gray-50 dark:bg-slate-700 p-6 rounded-lg shadow-sm">
                             <div class="flex justify-between items-start">
                                 <div>
-                                    <h4 class="font-bold text-lg">B.Tech Chemical Engineering</h4>
-                                    <p class="text-blue-600 dark:text-blue-400">NIT Jalandhar</p>
+                                    <h4 class="font-bold text-lg">B.Tech in Chemical Engineering</h4>
+                                    <p class="text-blue-600 dark:text-blue-400">Dr. B R Ambedkar National Institute of
+                                        Technology, Jalandhar</p>
                                 </div>
-                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">2021-2025</span>
+                                <span
+                                    class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">2022–2026</span>
                             </div>
-                            <p class="mt-3 text-gray-600 dark:text-gray-400">CGPA: 8.7/10</p>
-                            <p class="text-gray-600 dark:text-gray-400">Specialization in Process Control & Automation</p>
+                            <p class="mt-3 text-gray-600 dark:text-gray-400">CGPA: 7.7/10</p>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Focused on core chemical engineering subjects including Reaction Engineering, Heat
+                                Transfer, Mass Transfer, Thermodynamics, and Process Design.
+                            </p>
                         </div>
-                        
+
                         <div class="bg-gray-50 dark:bg-slate-700 p-6 rounded-lg shadow-sm">
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h4 class="font-bold text-lg">Higher Secondary Education</h4>
-                                    <p class="text-blue-600 dark:text-blue-400">Delhi Public School</p>
+                                    <p class="text-blue-600 dark:text-blue-400">Kendriya Vidyalaya No.I, Kankarbagh,
+                                        Patna </p>
                                 </div>
-                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">2019-2021</span>
+                                <span
+                                    class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">2019–2021</span>
                             </div>
-                            <p class="mt-3 text-gray-600 dark:text-gray-400">Percentage: 94.2%</p>
-                            <p class="text-gray-600 dark:text-gray-400">Physics, Chemistry, Mathematics, Computer Science</p>
+                            <p class="mt-3 text-gray-600 dark:text-gray-400">Percentage: 97.5%</p>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Core subjects: Physics, Chemistry, Mathematics, Informatics Practices(core PYTHON).
+                            </p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -274,8 +305,9 @@
     <!-- Experience Section -->
     <section id="experience" class="py-20 bg-gray-50 dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-center mb-16 section-title" data-aos="fade-up">Professional Experience</h2>
-            
+            <h2 class="text-3xl font-bold text-center mb-16 section-title" data-aos="fade-up">Professional Experience
+            </h2>
+
             <div class="max-w-3xl mx-auto">
                 <div class="space-y-12">
                     <!-- Experience 1 -->
@@ -283,166 +315,170 @@
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-bold">Process Engineering Intern</h3>
-                                    <p class="text-blue-600 dark:text-blue-400">Reliance Industries Limited</p>
+                                    <h3 class="text-xl font-bold">Process Engineering Intern – LDPE Plant</h3>
+                                    <p class="text-blue-600 dark:text-blue-400">Reliance Industries Limited, Nagothane
+                                    </p>
                                 </div>
-                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">Jun 2023 - Present</span>
+                                <span
+                                    class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">
+                                    Jun 2025 – Aug 2025
+                                </span>
                             </div>
                             <ul class="list-disc pl-5 text-gray-600 dark:text-gray-400 space-y-2">
-                                <li>Developed a Python-based simulation model for LDPE reactor optimization that reduced energy consumption by 12%</li>
-                                <li>Implemented machine learning algorithms to predict catalyst degradation patterns, extending catalyst life by 17%</li>
-                                <li>Created digital twin of compressor units using Aspen HYSYS and Python, enabling predictive maintenance</li>
-                                <li>Conducted CFD analysis of heat exchanger networks to identify bottlenecks and improve thermal efficiency</li>
+                                <li>Involved in performance evaluation and efficiency calculation of multi-stage
+                                    compressors in the LDPE production unit.</li>
+                                <li>Analyzed energy losses across stages and identified causes like pressure drops, heat
+                                    losses, and mechanical inefficiencies.</li>
+                                <li>Optimized compressor operation using thermodynamic calculations to improve overall
+                                    plant energy efficiency.</li>
+                                <li>Collaborated with the plant operation team on data logging, instrumentation
+                                    reliability, and safety protocols.</li>
                             </ul>
                             <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Aspen HYSYS</span>
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">CFD</span>
-                                <span class="tech-tag">Data Analysis</span>
+                                <span class="tech-tag">Thermodynamics</span>
+                                <span class="tech-tag">Energy Audit</span>
+                                <span class="tech-tag">Compressor Systems</span>
+                                <span class="tech-tag">Process Optimization</span>
+                                <span class="tech-tag">Plant Operations</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Experience 2 -->
                     <div class="timeline-item" data-aos="fade-up">
                         <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
                             <div class="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 class="text-xl font-bold">Research Assistant</h3>
-                                    <p class="text-blue-600 dark:text-blue-400">NIT Jalandhar Chemical Engineering Dept.</p>
+                                    <h3 class="text-xl font-bold">Research Intern – Energy Systems Lab</h3>
+                                    <p class="text-blue-600 dark:text-blue-400">Department of Chemical Engineering, NIT
+                                        Jalandhar</p>
                                 </div>
-                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">Jan 2023 - May 2023</span>
+                                <span
+                                    class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">
+                                    Jan 2025 – Apr 2025
+                                </span>
                             </div>
                             <ul class="list-disc pl-5 text-gray-600 dark:text-gray-400 space-y-2">
-                                <li>Investigated graphene-based nanocomposites for enhanced radiation shielding in nuclear applications</li>
-                                <li>Designed and fabricated a lab-scale membrane distillation unit for wastewater treatment</li>
-                                <li>Developed MATLAB scripts for modeling mass transfer in packed bed reactors</li>
-                                <li>Published research paper on "Novel Approaches to Heavy Metal Removal from Industrial Effluents"</li>
+                                <li>Studied thermal efficiency losses in industrial heat exchangers and pressure vessels
+                                    through performance data analysis.</li>
+                                <li>Worked on developing energy balance models to assess the impact of insulation and
+                                    fouling on heat recovery units.</li>
+                                <li>Prepared technical reports and presented findings on process improvements for
+                                    industrial-scale heat recovery systems.</li>
+                                <li>Used Aspen Plus and Excel tools for simulation and energy estimation.</li>
                             </ul>
                             <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="tech-tag">MATLAB</span>
-                                <span class="tech-tag">Nanomaterials</span>
-                                <span class="tech-tag">Process Design</span>
-                                <span class="tech-tag">Lab Techniques</span>
-                                <span class="tech-tag">Data Modeling</span>
+                                <span class="tech-tag">Heat Transfer</span>
+                                <span class="tech-tag">Energy Efficiency</span>
+                                <span class="tech-tag">Aspen Plus</span>
+                                <span class="tech-tag">Process Equipment</span>
+                                <span class="tech-tag">Technical Report Writing</span>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Experience 3 -->
-                    <div class="timeline-item" data-aos="fade-up">
-                        <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-sm">
-                            <div class="flex justify-between items-start mb-4">
-                                <div>
-                                    <h3 class="text-xl font-bold">Process Automation Intern</h3>
-                                    <p class="text-blue-600 dark:text-blue-400">Tata Chemicals Limited</p>
-                                </div>
-                                <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">May 2022 - Jul 2022</span>
-                            </div>
-                            <ul class="list-disc pl-5 text-gray-600 dark:text-gray-400 space-y-2">
-                                <li>Developed PLC programs for automated control of soda ash crystallization process</li>
-                                <li>Created HMI dashboards for real-time monitoring of plant operations using Ignition SCADA</li>
-                                <li>Implemented OPC UA protocol for seamless data exchange between DCS and analytics platform</li>
-                                <li>Reduced manual sampling requirements by 30% through implementation of inline quality sensors</li>
-                            </ul>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="tech-tag">PLC Programming</span>
-                                <span class="tech-tag">SCADA</span>
-                                <span class="tech-tag">OPC UA</span>
-                                <span class="tech-tag">Process Control</span>
-                                <span class="tech-tag">DCS</span>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-white dark:bg-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-16 section-title" data-aos="fade-up">Featured Projects</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project 1 -->
                 <div class="project-card rounded-xl bg-gray-50 dark:bg-slate-700 overflow-hidden" data-aos="fade-up">
                     <div class="h-48 overflow-hidden">
-                        <img src="/assets//ldpe.jpg" 
-                             alt="LDPE Plant Optimization" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <img src="/assets//ldpe.jpg" alt="LDPE Plant Optimization"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold">LDPE Plant Optimization System</h3>
-                            <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">Reliance</span>
+                            <h3 class="text-xl font-bold">Compressor Efficiency Study – LDPE Plant</h3>
+                            <span
+                                class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded">Reliance</span>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">
-                            Developed a comprehensive optimization system for high-pressure LDPE reactors using Python and Aspen HYSYS. The system uses real-time sensor data to adjust operating parameters, reducing energy consumption by 12% while maintaining product quality.
+                            Analyzed performance of multi-stage compressors in the LDPE production unit. Identified
+                            energy losses due to pressure drops and thermal inefficiencies, and proposed operational
+                            changes to improve overall compressor efficiency and energy utilization.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Aspen HYSYS</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">OPC UA</span>
+                            <span class="tech-tag">Thermodynamics</span>
+                            <span class="tech-tag">Compressor Analysis</span>
+                            <span class="tech-tag">Energy Balance</span>
+                            <span class="tech-tag">Industrial Operations</span>
                         </div>
-                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium flex items-center">
-                            View Case Study <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        <a href="#"
+                            class="text-blue-600 dark:text-blue-400 hover:underline font-medium flex items-center">
+                            View Report <i class="fas fa-arrow-right ml-2 text-sm"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Project 2 -->
-                <div class="project-card rounded-xl bg-gray-50 dark:bg-slate-700 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card rounded-xl bg-gray-50 dark:bg-slate-700 overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="100">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                             alt="Chemical Process Dashboard" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <img src="/assets/Heat_exchanger.webp" alt="Energy Loss in Heat Exchangers"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold">Real-time Chemical Process Dashboard</h3>
-                            <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">NIT Jalandhar</span>
+                            <h3 class="text-xl font-bold">Heat Exchanger Efficiency Audit</h3>
+                            <span
+                                class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs px-2 py-1 rounded">NIT
+                                Jalandhar</span>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">
-                            Created a web-based dashboard using React.js and Node.js for monitoring chemical processes in real-time. The system integrates with PLCs via OPC UA, visualizes process data, and sends alerts for abnormal conditions, reducing response time by 40%.
+                            Conducted lab-scale analysis of shell-and-tube heat exchangers to quantify energy losses due
+                            to fouling and poor insulation. Suggested improvements in cleaning schedules and design
+                            modifications for better thermal efficiency.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">OPC UA</span>
-                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Heat Transfer</span>
+                            <span class="tech-tag">Process Equipment</span>
+                            <span class="tech-tag">Energy Audit</span>
+                            <span class="tech-tag">Technical Analysis</span>
                         </div>
-                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium flex items-center">
-                            View GitHub <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        <a href="#"
+                            class="text-blue-600 dark:text-blue-400 hover:underline font-medium flex items-center">
+                            View Abstract <i class="fas fa-arrow-right ml-2 text-sm"></i>
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Project 3 -->
-                <div class="project-card rounded-xl bg-gray-50 dark:bg-slate-700 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card rounded-xl bg-gray-50 dark:bg-slate-700 overflow-hidden" data-aos="fade-up"
+                    data-aos-delay="200">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                             alt="Wastewater Treatment" 
-                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1170&q=80"
+                            alt="Safety Hazard Study"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold">AI-Powered Wastewater Treatment</h3>
-                            <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs px-2 py-1 rounded">Research</span>
+                            <h3 class="text-xl font-bold">HAZOP Analysis of Distillation Unit</h3>
+                            <span
+                                class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs px-2 py-1 rounded">Academic</span>
                         </div>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">
-                            Developed an AI model to optimize chemical dosing in wastewater treatment plants. The system uses sensor data and weather forecasts to predict influent characteristics and adjust treatment parameters, reducing chemical costs by 22%.
+                            Performed Hazard and Operability (HAZOP) study of a multi-component distillation column.
+                            Identified critical failure points, control measures, and instrumentation upgrades to
+                            improve safety and operational reliability.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">IoT Sensors</span>
-                            <span class="tech-tag">Process Optimization</span>
+                            <span class="tech-tag">Process Safety</span>
+                            <span class="tech-tag">HAZOP</span>
+                            <span class="tech-tag">Distillation</span>
+                            <span class="tech-tag">Process Control</span>
                         </div>
-                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline font-medium flex items-center">
-                            Read Paper <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        <a href="#"
+                            class="text-blue-600 dark:text-blue-400 hover:underline font-medium flex items-center">
+                            View Summary <i class="fas fa-arrow-right ml-2 text-sm"></i>
                         </a>
                     </div>
                 </div>
@@ -450,119 +486,130 @@
         </div>
     </section>
 
+
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-50 dark:bg-slate-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-16 section-title" data-aos="fade-up">Technical Skills</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Chemical Engineering Skills -->
                 <div data-aos="fade-right">
-                    <h3 class="text-2xl font-semibold mb-8 text-center">Chemical Engineering</h3>
+                    <h3 class="text-2xl font-semibold mb-8 text-center">Core Chemical Engineering</h3>
                     <div class="space-y-6">
                         <div>
                             <div class="flex justify-between mb-2">
-                                <span class="font-medium">Process Simulation (Aspen HYSYS)</span>
+                                <span class="font-medium">Process Simulation (Aspen HYSYS / Plus)</span>
                                 <span>90%</span>
                             </div>
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 90%"></div>
                             </div>
                         </div>
-                        
+
                         <div>
                             <div class="flex justify-between mb-2">
-                                <span class="font-medium">Process Design & Optimization</span>
+                                <span class="font-medium">Chemical Process Design & Optimization</span>
                                 <span>85%</span>
                             </div>
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 85%"></div>
                             </div>
                         </div>
-                        
+
                         <div>
                             <div class="flex justify-between mb-2">
-                                <span class="font-medium">Chemical Reactor Design</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">CFD Analysis</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Process Control & Automation</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 88%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Tech Skills -->
-                <div data-aos="fade-left">
-                    <h3 class="text-2xl font-semibold mb-8 text-center">Technology</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Python (Pandas, NumPy, SciPy)</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Data Analysis & Visualization</span>
-                                <span>87%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 87%"></div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium">Machine Learning</span>
+                                <span class="font-medium">Heat Exchanger and Compressor Analysis</span>
                                 <span>82%</span>
                             </div>
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 82%"></div>
                             </div>
                         </div>
-                        
+
                         <div>
                             <div class="flex justify-between mb-2">
-                                <span class="font-medium">Web Development (MERN Stack)</span>
-                                <span>78%</span>
+                                <span class="font-medium">Process Control & Instrumentation</span>
+                                <span>88%</span>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress-fill" style="width: 78%"></div>
+                                <div class="progress-fill" style="width: 88%"></div>
                             </div>
                         </div>
-                        
+
                         <div>
                             <div class="flex justify-between mb-2">
-                                <span class="font-medium">Industrial IoT & SCADA Systems</span>
+                                <span class="font-medium">Thermodynamics & Mass Transfer</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">HAZOP & Process Safety</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lab & Analytical Skills -->
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-8 text-center">Lab & Industrial Tools</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Aspen Plus & Aspen HYSYS</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">MATLAB for Chemical Calculations</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Lab-Scale Process Setup & Operation</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Technical Report Writing</span>
                                 <span>85%</span>
                             </div>
                             <div class="progress-bar">
                                 <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">P&ID Interpretation & Troubleshooting</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%"></div>
                             </div>
                         </div>
                     </div>
@@ -575,14 +622,17 @@
     <section id="contact" class="py-20 bg-white dark:bg-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-center mb-16 section-title" data-aos="fade-up">Get In Touch</h2>
-            
+
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Left Column -->
                 <div data-aos="fade-right">
-                    <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
+                    <h3 class="text-2xl font-semibold mb-6">Let's Collaborate</h3>
                     <p class="text-gray-600 dark:text-gray-400 mb-8">
-                        I'm currently open to new opportunities, collaborations, or just a chat about chemical engineering innovations and technology. Feel free to reach out!
+                        Interested in process simulation, plant optimization, or sustainable chemical innovations?
+                        I'm open to industry collaborations, academic research, or just a discussion around solving
+                        real-world chemical engineering problems.
                     </p>
-                    
+
                     <div class="space-y-6">
                         <div class="flex items-start">
                             <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
@@ -590,10 +640,10 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-lg">Email</h4>
-                                <p class="text-gray-600 dark:text-gray-400">akash.raj@example.com</p>
+                                <p class="text-gray-600 dark:text-gray-400">rajakash.me@gmail.com</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
                                 <i class="fas fa-map-marker-alt text-blue-600 dark:text-blue-400"></i>
@@ -603,70 +653,85 @@
                                 <p class="text-gray-600 dark:text-gray-400">Jalandhar, Punjab, India</p>
                             </div>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
                                 <i class="fas fa-phone text-blue-600 dark:text-blue-400"></i>
                             </div>
                             <div>
                                 <h4 class="font-semibold text-lg">Phone</h4>
-                                <p class="text-gray-600 dark:text-gray-400">+91 98765 43210</p>
+                                <p class="text-gray-600 dark:text-gray-400">+91 7857936191</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mt-10">
-                        <h4 class="font-semibold text-lg mb-4">Connect with me</h4>
+                        <h4 class="font-semibold text-lg mb-4">Social Links</h4>
                         <div class="flex space-x-4">
-                            <a href="#" class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
-                                <i class="fab fa-linkedin-in text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
+                            <a href="https://www.linkedin.com/in/akash-raj-343263290/" target="_blank"
+                                class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
+                                <i
+                                    class="fab fa-linkedin-in text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
                             </a>
-                            <a href="#" class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
-                                <i class="fab fa-github text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
+                            <a href="#"
+                                class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
+                                <i
+                                    class="fab fa-github text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
                             </a>
-                            <a href="#" class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
-                                <i class="fab fa-twitter text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
+                            <a href="#"
+                                class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
+                                <i
+                                    class="fab fa-twitter text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
                             </a>
-                            <a href="#" class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
-                                <i class="fab fa-instagram text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
+                            <a href="#"
+                                class="bg-gray-100 dark:bg-slate-700 p-3 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition">
+                                <i
+                                    class="fab fa-instagram text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <div data-aos="fade-left">
+
+                <!-- Right Column -->
+                <!-- <div data-aos="fade-left">
                     <div class="bg-gray-50 dark:bg-slate-700 p-8 rounded-xl shadow-sm">
-                        <h3 class="text-2xl font-semibold mb-6">Send me a message</h3>
+                        <h3 class="text-2xl font-semibold mb-6">Send a Message</h3>
                         <form class="space-y-6">
                             <div>
                                 <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800">
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800">
                             </div>
-                            
+
                             <div>
                                 <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800">
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800">
                             </div>
-                            
+
                             <div>
                                 <label for="subject" class="block text-gray-700 dark:text-gray-300 mb-2">Subject</label>
-                                <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800">
+                                <input type="text" id="subject"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800">
                             </div>
-                            
+
                             <div>
                                 <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
-                                <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800"></textarea>
+                                <textarea id="message" rows="5"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-slate-800"></textarea>
                             </div>
-                            
-                            <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">
-                                Send Message
+
+                            <button type="submit"
+                                class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg">
+                                Submit Inquiry
                             </button>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-100 dark:bg-slate-900 py-10">
@@ -674,7 +739,8 @@
             <div class="text-center">
                 <h2 class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">Akash Raj</h2>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-                    Chemical Engineer & Technology Innovator | Bridging Chemical Processes with Digital Solutions
+                    Passionate Chemical Engineer | Specializing in Process Optimization, Plant Efficiency &
+                    Sustainability
                 </p>
                 <div class="flex justify-center space-x-6 mb-6">
                     <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
@@ -697,6 +763,7 @@
         </div>
     </footer>
 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Initialize AOS
@@ -704,27 +771,27 @@
             duration: 1000,
             once: true
         });
-        
+
         // Dark mode toggle
         const darkModeBtn = document.querySelector('.dark-mode-btn');
         darkModeBtn.addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
-            
+
             // Store preference in localStorage
             const isDark = document.documentElement.classList.contains('dark');
             localStorage.setItem('darkMode', isDark);
         });
-        
+
         // Check for saved dark mode preference
         if (localStorage.getItem('darkMode') === 'true') {
             document.documentElement.classList.add('dark');
         }
-        
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
@@ -732,4 +799,5 @@
         });
     </script>
 </body>
+
 </html>
